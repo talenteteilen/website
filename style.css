@@ -749,41 +749,52 @@
     }
 
 
+
     .bild-container {
     width: 100%;
     height: 400px; /* z.B. eine reduzierte Höhe */
     position: relative; /* wichtig */
     }
 
+    .Rechteck-1 {
+      display: none;
+    }
+    
     .kirchturm {
-    border-radius: 0; /* optional bei voller Breite */
+    border-radius: 4; /* optional bei voller Breite */
     }
   
     .Rechteck-2 {
-      position: relative;
+      position: absolute;
       width: 90%;
-      margin: 20px auto 0 auto;
+      left: 50%;            /* Startpunkt in der Mitte */
+      transform: translateX(-50%); /* Verschiebung um die Hälfte der Breite nach links */
+      margin-top: 20px;
       padding: 16px;
       height: auto;
-      display: block;
     }
   
     .Text-WillkommenFett {
       font-size: 28px;
-      line-height: 1.2;
+      line-height: 0.4;
       margin-bottom: 12px;
     }
   
     .Text-WillkommenKlein {
       font-size: 16px;
-      line-height: 1.4;
+      line-height: 1.0;
+    }
+    
+    .trenner {
+    width: 100%;
+    max-width: 1216px;
+    height: 2px;
+    background-color: #fef6e0;
+    margin: 64px auto;
     }
   
     .insektenhotel {
-      width: 100%;
-      height: auto;
-      float: none;
-      margin: 0 0 20px 0;
+      display: none;
     }
   
     .donnerstag-container {
@@ -792,8 +803,7 @@
     }
   
     .buch {
-      width: 100%;
-      height: auto;
+      display: none;
     }
   
     .donnerstag-text {
@@ -810,6 +820,16 @@
       padding: 16px;
       font-size: 16px;
     }
+    .Group-Anregung {
+      height: 0px;     
+      padding-bottom: 200px; 
+    }
+  
+    .Rechteck-Anregung {
+        position: absolute;
+        padding: 10px 12px;
+        line-height: 1.4;
+  }
   
     .kaffee-box {
       padding: 16px;
@@ -822,6 +842,7 @@
     .kaffee-text-liste {
       font-size: 16px;
     }
+
     .adresse-wrapper,
   .team-wrapper {
     flex-direction: column;
@@ -829,7 +850,13 @@
     text-align: center;
   }
 
-  .schild,
+  .schild {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   .gruppenbild {
     width: 100%;
     max-width: 100%;
@@ -841,6 +868,23 @@
     width: 100%;
     padding: 20px;
     font-size: 24px;
+  }
+
+  .grundriss-container {
+    max-width: 100%;          
+    padding: 10px 15px;       
+    padding-bottom: 10px;     
+    box-sizing: border-box;   
+    margin: 0 auto;           
+  }
+  
+  .map-container {
+    min-width: unset;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 auto;
   }
 
   .adresse-text-1 {
