@@ -60,7 +60,7 @@
     width: 100%;
   }
 
-  /* Hamburger-Icon */
+
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -701,6 +701,13 @@
   }
   
 
+
+
+
+
+
+
+
   @media (max-width: 768px) {
   
     .nav-links {
@@ -743,23 +750,33 @@
 
 
     .bild-container {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: 400px; /* z.B. eine reduzierte Höhe */
+    position: relative; /* wichtig */
+    }
+
+    .kirchturm {
+    border-radius: 0; /* optional bei voller Breite */
     }
   
     .Rechteck-2 {
-      position: static;
-      width: 100%;
+      position: relative;
+      width: 90%;
+      margin: 20px auto 0 auto;
+      padding: 16px;
       height: auto;
-      margin-top: 20px;
+      display: block;
     }
   
     .Text-WillkommenFett {
-      font-size: 32px;
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 12px;
     }
   
     .Text-WillkommenKlein {
       font-size: 16px;
+      line-height: 1.4;
     }
   
     .insektenhotel {
