@@ -1,0 +1,875 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fef6e0;
+    width: 100%;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    background-color: #fef6e0;
+    z-index: -1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+  
+  .navbar-content {
+    max-width: 1216px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    color: #284b63;
+    font-weight: Normal;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: #284b6385;
+  }
+  
+  .navbar-underline {
+    height: 2px;
+    background-color: #284b63;
+    width: 100%;
+  }
+
+  /* Hamburger-Icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #284b63;
+  padding: 8px;
+}
+
+/* Versteckte Checkbox */
+.nav-toggle {
+  display: none;
+}
+
+
+  .bild-container {
+    position: relative;
+    max-width: 937px;
+    width: 100%;
+    height: 700px;
+  }
+  
+  .kirchturm {
+    width: 100%;
+    height: 100%;
+    background: url("./img/kirchturm.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .Rechteck-1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(40,75,99,1);
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+
+  .Rechteck-2 {
+    max-width: 538px;
+    width: 100%;
+    height: 222px;
+    background: rgba(40,75,99,1);
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+  }
+  
+  .Text-WillkommenFett {
+    color: #F7E3AF;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .Text-WillkommenKlein {
+    color: #F7E3AF;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+
+
+  .Group-Idee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  
+
+  .Rechteck-Idee {
+    flex: 1 1 60%;
+    background: #fef6e0;
+    max-width: 1216px;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+
+.Rechteck-Idee p {
+  margin-top: 10px;
+  color: #284b63;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.trenner {
+    width: 100%;
+    max-width: 1216px;
+    height: 2px;
+    background-color: #fef6e0;
+    margin: 64px auto;
+  }
+
+.trenner_carl {
+    width: 100%;
+    max-width: 1216px;
+    height: 2px;
+    background-color: #F7E3AF;
+    margin: 32px auto;
+  }
+
+  .trenner_weiß {
+    width: 100%;
+    max-width: 1216px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 84px auto;
+  }
+
+.main-content {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 32px;
+    position: relative;
+  }
+
+  .collage {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  .insektenhotel {
+    max-width: 264px;
+    width: 100%;
+    height: 368px;
+    object-fit: cover;
+    border-radius: 4px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .kaffee-box {
+    overflow: hidden;
+    min-height: 368px;
+    height: 100%;
+    border-radius: 4px;
+    background: #284B63;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #F7E3AF;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .kaffee-text-fett {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0 0 15px 0;
+  }
+  
+  .kaffee-text-liste {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    list-style: circle;
+    margin: 0;
+  }
+  
+  .donnerstag-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .donnerstag-rect {
+    background: #fef6e0;
+    border-radius: 4px;
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .buch {
+    max-width: 328px;
+    width: 100%;
+    height: 246px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  
+  .donnerstag-text {
+    position: relative;
+    z-index: 2;
+    padding: 0px;
+    color: #284B63;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+  .standard-info-card {
+    margin-top: 30px;
+    background-color: #fef6e0;
+    border-left: 6px solid #284b63;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .standard-info-card h4 {
+    margin-top: 0;
+    color: #284b63;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .standard-info-card p {
+    margin: 0;
+    color: #284b63;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .event-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 30px;
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+  }
+  
+  .event-grid:has(.event-card:nth-child(1):nth-last-child(1)) {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-grid:has(.event-card:nth-child(1):nth-last-child(1)) .event-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .event-grid:has(.event-card:nth-child(1):nth-last-child(2)) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 860px; /* oder je nach Wunsch */
+  }
+
+  .event-grid:has(.event-card:nth-child(1):nth-last-child(4)) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+  }  
+  
+  .event-card {
+    background-color: rgba(247, 227, 175, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Playfair Display', serif;
+    color: #284B63;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .event-card h4 {
+    background-color: #284B63;
+    color: #F7E3AF;
+    padding: 12px 16px;
+    margin: -20px -20px 16px -20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .event-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+  }
+
+  .event-card.notice {
+    background-color: rgba(247, 227, 175, 0.4);
+    color: #8b0000; /* dunkler Rotton für Text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .event-card.notice h4 {
+    background-color: #8b0000;
+    color: white;
+    font-weight: normal;
+    font-size: 26px;
+  }
+  
+  .event-card.notice p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+  }  
+
+  .Group-Anregung{
+    position: relative;
+    width: 100%;
+    max-width: 1216px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    }
+
+    .Rechteck-Anregung{
+    position: absolute;
+    color: #F7E3AF;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1216px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color: #284B63;
+    border-radius: 4px;
+    padding: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .Group-Wirtreffen{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 1216px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    }
+
+    .Rechteck-Wirtreffen{
+    position: absolute;
+    color: #284B63;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1216px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color: #fef6e0;
+    border-radius: 4px;
+    padding: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .adresse-container {
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      
+      .adresse-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        max-width: 1216px;
+      }
+      
+      .schild {
+        max-width: 520px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+      }
+      
+      .adresse-rect {
+        background: #284B63;
+        border-radius: 4px;
+        padding: 30px;
+        box-sizing: border-box;
+        color: #F7E3AF;
+        width: 800px;
+        flex: 1;
+        height: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      
+      .adresse-text-1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      .adresse-text-2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+      
+      .lage-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1216px;
+        margin: 0 auto;
+      }
+      
+      .grundriss-container {
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+        transition: transform 0.4s ease;
+        background-color: #fef6e0;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 15px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Text nach unten drücken */
+        overflow: hidden;
+      }
+
+      
+      .grundriss-container:hover {
+        transform: scale(1.10);
+      }
+      
+      .grundriss-img {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .grundriss-label {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #284B63;
+      }
+      
+      .map-container {
+        flex: 1;
+        min-width: 400px;
+        height: 610px;
+        max-width: 600px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+
+      .team-container {
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      
+      .team-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        max-width: 1216px;
+      }
+      
+      .gruppenbild {
+        width: 750px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+      }
+      
+      .team-rect {
+        background: #284B63;
+        border-radius: 4px;
+        padding: 30px;
+        box-sizing: border-box;
+        color: #F7E3AF;
+        display: flex; /* Flex aktivieren */
+        justify-content: center; /* horizontal zentrieren */
+        align-items: center; /* vertikal zentrieren */
+        width: 800px;
+        flex: 1;
+        height: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      
+      .team-text {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+      
+      .member-wrapper {
+        display: flex;
+        justify-content: center; /* zentriert den ganzen Block */
+        gap: 60px;               /* Abstand zwischen den beiden Karten */
+        margin: 0 auto;
+        flex-wrap: wrap;         /* falls nötig bei kleineren Screens */
+      }
+      
+      .member-card {
+        background-color: rgba(247, 227, 175, 0.4);
+        padding: 35px;
+        border-radius: 4px;
+        font-family: 'Playfair Display', serif;
+        color: #284B63;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: calc((80% - 150px) / 2);
+        box-sizing: border-box;
+        transition: transform 0.4s ease;
+      }
+
+      .member-card:hover {
+        transform: scale(1.05);
+      }
+      
+      .member-bild {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        object-fit: cover;
+      }
+      
+      .member-text {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #284B63;
+      }
+      
+
+  .Text-WillkommenFett {
+    color: rgba(247,227,175,1);
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .Text-WillkommenKlein {
+    color: rgba(247,227,175,1);
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+  
+  .impressum {
+    width: 100%;
+    background-color: #284B63;
+    color: #F7E3AF;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .impressum-content {
+    max-width: 1216px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .impressum h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .nav-links {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      padding: 0;
+      margin: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links li {
+      width: 100%;
+      padding: 12px 16px;
+    }
+  
+    .nav-toggle:checked + .hamburger + .nav-links {
+      max-height: 400px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+
+
+    .bild-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .Rechteck-2 {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .Text-WillkommenFett {
+      font-size: 32px;
+    }
+  
+    .Text-WillkommenKlein {
+      font-size: 16px;
+    }
+  
+    .insektenhotel {
+      width: 100%;
+      height: auto;
+      float: none;
+      margin: 0 0 20px 0;
+    }
+  
+    .donnerstag-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .buch {
+      width: 100%;
+      height: auto;
+    }
+  
+    .donnerstag-text {
+      text-align: left;
+      font-size: 24px;
+    }
+  
+    .event-grid {
+      grid-template-columns: 1fr;
+      padding: 0 16px;
+    }
+  
+    .standard-info-card {
+      padding: 16px;
+      font-size: 16px;
+    }
+  
+    .kaffee-box {
+      padding: 16px;
+    }
+  
+    .kaffee-text-fett {
+      font-size: 24px;
+    }
+  
+    .kaffee-text-liste {
+      font-size: 16px;
+    }
+    .adresse-wrapper,
+  .team-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .schild,
+  .gruppenbild {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .adresse-rect,
+  .team-rect {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .adresse-text-1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .adresse-text-2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .member-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .member-card {
+    width: 100%;
+  }
+
+  .lage-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grundriss-container,
+  .map-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grundriss-label {
+    font-size: 14px;
+  }
+
+  .team-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .Group-Wirtreffen,
+  .Rechteck-Wirtreffen {
+    max-width: 100%;
+    padding: 10px;
+  }
+  }
+  
