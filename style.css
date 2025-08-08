@@ -410,6 +410,15 @@
     text-align: center;
   }  
 
+  .event-image {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto 16px auto; 
+  border-radius: 6px;
+  object-fit: cover;
+}
+
   .Group-Anregung{
     position: relative;
     width: 100%;
@@ -815,10 +824,11 @@
       grid-template-columns: 1fr;
       padding: 0 16px;
     }
-  
+
     .standard-info-card {
       padding: 16px;
       font-size: 16px;
+      margin-bottom: 30px;
     }
     .Group-Anregung {
       height: 0px;     
