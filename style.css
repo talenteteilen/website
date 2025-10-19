@@ -773,6 +773,7 @@
     .kirchturm {
     border-radius: 4; /* optional bei voller Breite */
     background: url("./img/Herbst_mobil.png");
+    background-size: contain;
     }
   
     .Rechteck-2 {
