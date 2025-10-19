@@ -762,7 +762,7 @@
 
     .bild-container {
     width: 100%;
-    height: 200px; /* z.B. eine reduzierte Höhe */
+    height: 400px; /* z.B. eine reduzierte Höhe */
     position: relative; /* wichtig */
     }
 
@@ -772,6 +772,7 @@
     
     .kirchturm {
     border-radius: 4; /* optional bei voller Breite */
+    background: url("./img/Herbst.png");
     }
   
     .Rechteck-2 {
