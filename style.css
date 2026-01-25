@@ -823,12 +823,21 @@
       font-size: 24px;
     }
   
+  
+      
     .event-grid {
-      grid-template-columns: 1fr;
-      padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+    justify-content: center;
     align-items: start;
-    }
+      }
 
+      .event-grid .event-card {
+        width: 100%;
+        max-width: 100%;
+        align-self: start;
+      }
     .standard-info-card {
       padding: 16px;
       font-size: 16px;
