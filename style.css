@@ -826,6 +826,7 @@
     .event-grid {
       grid-template-columns: 1fr;
       padding: 0 16px;
+    align-items: start;
     }
 
     .standard-info-card {
